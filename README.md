@@ -45,7 +45,7 @@ set CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\shared\qjutils.jar;%CATALINA_HOME%\sha
 
 8. in order to run the script do the following actions:
 
-  ```
+  	```
 	cd mininet/custom
 	sudo python test.py
-  ```
+	  ```
