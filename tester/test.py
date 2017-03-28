@@ -10,12 +10,9 @@ from mininet.log import setLogLevel, info
 
 class TestTopo(Topo):
     def build(self, links, nodes):
-	hosts = [ self.addHost(str(node.Id), cpu = int(node.Cpu), queue = int(node.Queue) ) for node in nodes ]
-	switch = self.addSwitch('s1')
-	for host in hosts:
-		self.addLink( host, switch, bw=30, delay= '5ms')
-	#for link in links:
-    #   self.addLink( hosts[int(link.Source)], hosts[int(link.Destination)], bw=float(link.Bandwidth), delay= str(link.Delay)+'ms')
+    	hosts = [ self.addHost(str(node.Id), cpu = int(node.Cpu), queue = int(node.Queue) ) for node in nodes ]
+    	for link in links:
+           self.addLink( hosts[int(link.Source)], hosts[int(link.Destination)], bw=float(link.Bandwidth), delay= str(link.Delay)+'ms')
     
 class Link:
     def __init__(self, source, destination, bw, delay): 
@@ -35,7 +32,6 @@ def readFile(filename, linkList, nodeList):
     cpu = []
     with open(filename) as f:
         content = f.readlines()
-        # you may also want to remove whitespace characters like `\n` at the end of each line
     content = [x.strip() for x in content] 
     
     queueLine = content.pop()
@@ -72,7 +68,6 @@ def simpleTest():
     print ("Dumping host connections")
     dumpNodeConnections(net.hosts)
     print ("Testing network connectivity")
-    net.pingAll()
     net.stop()
 
 if __name__ == '__main__':
