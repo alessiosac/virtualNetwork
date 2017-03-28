@@ -1,10 +1,15 @@
-How to run:
+#VirtualNetwork
+
+This project is written in Java and requires `JRE 1.8` or later. 
 
 
-This project requires `JRE 1.8` or later.
+**How to run:**
+- Open eclipse and import the project.
+- Run the program passing 2 arguments : "<fileInput>" "<fileOutput>". The output file will be created in the same directory.
+- 
 
+Please notice that input and outout files are placed in main folder.
 
-**Windows**
 - install `maven` [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - set ambient variable `JAVA_HOME` to where you installed the jdk (e.g. `C:\Program Files\Java\jdk1.8.X_YY`)
 - install Apache Tomcat 8 [here](https://tomcat.apache.org/download-80.cgi)
@@ -28,18 +33,11 @@ set CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\shared\qjutils.jar;%CATALINA_HOME%\sha
   <user username="both" password="tomcat" roles="tomcat,role1"/>
   <user username="role1" password="tomcat" roles="role1"/>
   ```
-- launch Tomcat 8 with the startup script `%CATALINA_HOME%\bin\startup.bat`
-- (optional) if you previously configured Tomcat Manager you can open a browser and navigate to [this link](http://localhost:8080/manager) and login using `tomcat/tomcat` as username/password
-- (optional) you can deploy/undeploy/redeploy the downloaded WARs through the web interface
 
-**Eclipse**
-- open the project
-- run the program
-Please notice that input files are placed in main folder and output files will be created in the same folder.
 
 **How to load graph on `mininet` on Windows**
 
-1. download the VM from [the site](http://mininet.org/) and import on VirtualBox
+1. download the VM from (the site)[http://mininet.org/] and import on VirtualBox
 
 2. download (PuTTY and Xming)[https://github.com/mininet/openflow-tutorial/wiki/Installing-Required-Software]
 
