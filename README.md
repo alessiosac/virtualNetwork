@@ -1,6 +1,6 @@
 *VirtualNetwork*
 
-This project is written in Java and requires `JRE 1.8` or later. 
+This project is written in Java and requires `JRE 1.8`. 
 
 
 **How to run:**
@@ -13,17 +13,10 @@ Please notice that input and outout files are placed in main folder.
 ```bat
 set CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\shared\qjutils.jar;%CATALINA_HOME%\shared\mcnet.jar;%CATALINA_HOME%\shared\com.microsoft.z3.jar;.;%CATALINA_HOME%\webapps\verify\WEB-INF\classes\tests
 ```
-- download `neo4jmanager.war` and `verify.war` from [here](https://github.com/netgroup-polito/verigraph/tree/master/service/build/windows)
-- copy downloaded WARs into `%CATALINA_HOME%\webapps`
-- (optional) configure Tomcat Manager:
-  - open the file `%CATALINA_HOME%\conf\tomcat-users.xml`
-  - under the `tomcat-users` tag place the following content:
+
   ```xml
   <role rolename="tomcat"/>
   <role rolename="role1"/>
-  <user username="tomcat" password="tomcat" roles="tomcat,manager-gui"/>
-  <user username="both" password="tomcat" roles="tomcat,role1"/>
-  <user username="role1" password="tomcat" roles="role1"/>
   ```
 
 
@@ -37,20 +30,20 @@ set CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\shared\qjutils.jar;%CATALINA_HOME%\sha
 
 	```
 	Login: mininet
-	PW: mininet
+	Password: mininet
 	```
 4. run ifconfig at $ prompt to get IP Address. You can note that eth1 is not set up, so do this:
+
 	```
 	sudo dhclient eth1
-	
 	```
+5. using PuTTY connect the local machine to mininet, using the new IP(e.g., `192.168.56.101`), the password is `mininet`.
 
-5.
+6. Double click on Xming 
 
+7. download (winSCP)[] and follow this (guide)[http://sandeshshrestha.blogspot.it/2015/01/transfer-files-between-host-os-and.html] to transfer file from host OS to mininet, put them into `mininet/custom` folder.
 
-6. download (winSCP)[] and follow this (guide)[http://sandeshshrestha.blogspot.it/2015/01/transfer-files-between-host-os-and.html] to transfer file from host OS to mininet.
-
-7. under `/verify/src/main/webapp/json/` create a file `<type>.json`. This file represents a JSON schema \(see [here](http://json-schema.org/) the official documentation\). For compatibility with the other functions it is mandatory to support an array as the root of the configuration, but feel free to specify all the other constraints as needed. A sample of `<type>.json` to describe an empty configuration could be the following:
+8. in order to run the script do the following actions:
 
   ```
 	cd mininet/custom
