@@ -8,7 +8,7 @@ This project is written in Java and requires `JRE 1.8`.
 
 - Run the program passing 2 arguments : `<fileInput>` `<fileOutput>` (e.g., `star` and `starVirtual`).
 
-The project already conatins some files used as input file, `<file>.txt`, and the results of the execution on theme,  `<file>Virtual.txt`.
+The project already cointains some files used as input file, `<file>.txt`, and the results of the execution on theme,  `<file>Virtual.txt`.
 
 The `tester` folder cointains the files that are needed for the second phase.
 
