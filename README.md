@@ -41,7 +41,7 @@ set CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\shared\qjutils.jar;%CATALINA_HOME%\sha
 
 6. Double click on Xming 
 
-7. download (winSCP)[] and follow this (guide)[http://sandeshshrestha.blogspot.it/2015/01/transfer-files-between-host-os-and.html] to transfer file from host OS to mininet, put them into `mininet/custom` folder.
+7. download [winSCP](https://winscp.net/eng/download.php) and follow this [guide](http://sandeshshrestha.blogspot.it/2015/01/transfer-files-between-host-os-and.html) to transfer file from host OS to mininet, put them into `mininet/custom` folder.
 
 8. in order to run the script do the following actions:
 
