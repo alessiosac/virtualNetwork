@@ -1,0 +1,11 @@
+nodes: 4
+topology: star
+alpha: 0
+node-min-cpu: 20
+node-max-cpu: 40
+node-min-queue: 100
+node-max-queue: 1000
+link-min-bw: 10
+link-max-bw: 30
+link-min-delay: 0.1
+link-max-delay: 0.7
