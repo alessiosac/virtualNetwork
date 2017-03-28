@@ -22,9 +22,9 @@ set CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\shared\qjutils.jar;%CATALINA_HOME%\sha
 
 **How to load graph on `mininet` on Windows**
 
-1. download the VM from (the site)[http://mininet.org/] and import on VirtualBox
+1. download the VM from [the site](http://mininet.org/) and import on VirtualBox
 
-2. download (PuTTY and Xming)[https://github.com/mininet/openflow-tutorial/wiki/Installing-Required-Software]
+2. download [PuTTY and Xming](https://github.com/mininet/openflow-tutorial/wiki/Installing-Required-Software)
 
 3. modify settings on VirtualBox of the VM, create an adapter on eth1 and connect via PuTTY:
 
