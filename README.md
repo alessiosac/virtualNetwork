@@ -7,7 +7,7 @@ This project is written in Java and requires `JRE 1.8`.
 - Open eclipse and import the project.
 - Run the program passing 2 arguments : `<fileInput>` `<fileOutput>`. The output file will be created in the same directory.
 
-Please notice that input and outout files are placed in main folder.
+The project conatins some files used as input file and the results of the execution on them, named `<file>Virtual.txt`
 
 - create custom file setenv.bat under `%CATALINA_HOME%\bin` with the following content:
 ```bat
