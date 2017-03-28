@@ -67,7 +67,6 @@ def simpleTest():
     net.start()
     print ("Dumping host connections")
     dumpNodeConnections(net.hosts)
-    print ("Testing network connectivity")
     net.stop()
 
 if __name__ == '__main__':
