@@ -15,7 +15,7 @@ The `tester` folder cointains the files that are needed for the second phase.
 
 **How to load graph on `mininet` on Windows**
 
-1. download the VM from [the site](http://mininet.org/) and import on VirtualBox
+1. download the VM from [the Mininet site](http://mininet.org/) and import on VirtualBox
 
 2. download [PuTTY and Xming](https://github.com/mininet/openflow-tutorial/wiki/Installing-Required-Software)
 
@@ -26,17 +26,17 @@ The `tester` folder cointains the files that are needed for the second phase.
 	Password: mininet
 	```
 
-4. run ifconfig at $ prompt to get IP Address. You can note that eth1 is not set up, so do this:
+4. run ifconfig at $ prompt to get IP Address. You can note that eth1 is not set up, so do this :
 
 	```
 	sudo dhclient eth1
 	```
 
-5. using PuTTY connect the local machine to `mininet`, using the new IP(e.g., `192.168.56.101`), the password is `mininet`.
+5. using PuTTY connect the local machine to `mininet`, using the new IP(e.g., `192.168.56.101`), the password is `mininet`
 
 6. double click on Xming 
 
-7. download [winSCP](https://winscp.net/eng/download.php) and follow this [guide](http://sandeshshrestha.blogspot.it/2015/01/transfer-files-between-host-os-and.html) to transfer file from host OS to mininet, put them into `mininet/custom` folder.
+7. download [winSCP](https://winscp.net/eng/download.php) and follow this [guide](http://sandeshshrestha.blogspot.it/2015/01/transfer-files-between-host-os-and.html) to transfer file from host OS to mininet, put them into `mininet/custom` folder
 
 8. in order to run the script do the following actions:
 
