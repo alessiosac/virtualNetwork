@@ -4,11 +4,11 @@ This project is written in Java and requires `JRE 1.8`.
 
 
 **How to run:**
-- Open eclipse and import the project.
+- The project was developed in `Eclipse`, if you use the same IDE, open `Eclipse` and import the project. However it is possible to run this project from command line, as usual Java project.
 
 - Run the program passing 2 arguments : `<fileInput>` `<fileOutput>` (e.g., `star` and `starVirtual`).
 
-The project conatins some files used as input file and the results of the execution on theme named `<file>Virtual.txt`.
+The project already conatins some files used as input file, `<file>.txt`, and the results of the execution on theme,  `<file>Virtual.txt`.
 
 The `tester` folder cointains the files that are needed for the second phase.
 
