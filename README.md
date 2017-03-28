@@ -10,6 +10,8 @@ This project is written in Java and requires `JRE 1.8`.
 
 The project conatins some files used as input file and the results of the execution on theme named `<file>Virtual.txt`.
 
+The `tester` folder cointains the files that are needed for the second phase.
+
 
 **How to load graph on `mininet` on Windows**
 
