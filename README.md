@@ -1,22 +1,14 @@
-#VirtualNetwork
+*VirtualNetwork*
 
 This project is written in Java and requires `JRE 1.8` or later. 
 
 
 **How to run:**
 - Open eclipse and import the project.
-- Run the program passing 2 arguments : "<fileInput>" "<fileOutput>". The output file will be created in the same directory.
-- 
+- Run the program passing 2 arguments : `<fileInput>` `<fileOutput>`. The output file will be created in the same directory.
 
 Please notice that input and outout files are placed in main folder.
 
-- install `maven` [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- set ambient variable `JAVA_HOME` to where you installed the jdk (e.g. `C:\Program Files\Java\jdk1.8.X_YY`)
-- install Apache Tomcat 8 [here](https://tomcat.apache.org/download-80.cgi)
-- set ambient variable `CATALINA_HOME` to the directory where you installed Apache (e.g. `C:\Program Files\Java\apache-tomcat-8.0.30`)
-- create `shared` folder under `%CATALINA_HOME%`
-- add previously created folder to the Windows `Path` system variable (i.e. append the following string at the end: `;%CATALINA_HOME%\shared`)
-- download `mcnet.jar`, `com.microsoft.z3.jar` and `qjutils.jar` from [here](https://github.com/netgroup-polito/verigraph/tree/master/service/build) and copy them to `%CATALINA_HOME%\shared` 
 - create custom file setenv.bat under `%CATALINA_HOME%\bin` with the following content:
 ```bat
 set CLASSPATH=%CLASSPATH%;%CATALINA_HOME%\shared\qjutils.jar;%CATALINA_HOME%\shared\mcnet.jar;%CATALINA_HOME%\shared\com.microsoft.z3.jar;.;%CATALINA_HOME%\webapps\verify\WEB-INF\classes\tests
