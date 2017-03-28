@@ -1,4 +1,4 @@
-*VirtualNetwork*
+# VirtualNetwork
 
 This project is written in Java and requires `JRE 1.8`. 
 
