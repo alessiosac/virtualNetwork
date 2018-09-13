@@ -15,7 +15,7 @@ where  the last two lines are not link definitions, but a space-separated list o
 
 This project is written in Java and requires `JRE 1.8`. 
 
-The `tester` includes a script that generates with mininet a virtual network according to the output file, that
+The `tester` folder includes a script that generates with mininet a virtual network according to the output file, that
 is, the network should have as many virtual hosts as you specified in your configuration file, with the same network connectivity
 and the same bandwidth, delay and queue.
 
