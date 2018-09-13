@@ -1,6 +1,28 @@
 # VirtualNetwork
 
 This Java program accepts an input configuration file and returns a text file with the virtual network graph generated.
+
+The input file contains the following lines:
+
+	nodes: size of the virtual network graph
+	topology: linear, full, star, or random (i.e., randomly connected graph)
+	\&#945;: the bias of the random coin (ignored if the topology is not random)
+	min virtual node CPU: the min virtual CPU capacity allocated to a virtual node (VM)
+	max virtual node CPU: max virtual CPU capacity allocated to a virtual node (VM)
+	min virtual node queue: min buffer capacity available at virtual node (VM)
+	max virtual node queue: max buffer capacity available at virtual node (VM)
+	min virtual link bandwidth: min bandwidth reserved by a virtual link
+	max virtual link bandwidth: max bandwidth reserved by a virtual link
+	min virtual link delay : min bandwidth reserved by a virtual link
+	max virtual link delay: max bandwidth reserved by a virtual link
+	
+If the parameter random is chosen, the program needs to generate the graph as follows:
+For each possible pair of nodes: flip a biased coin with bias alpha. If the output of the coin
+flip is 1, then add the edge, otherwise do not add the edge and move on to the next edge
+candidate. Make sure that if &#945; = 1 the resulting virtual network (graph) is fully connected
+(full), and if &#945; = 0 the graph should have no links. If &#945; = 0:5 then you have a perfectly
+unbiased coin.
+ 
 The output file contains the following space-separated values:
 
 
