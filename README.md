@@ -1,7 +1,23 @@
 # VirtualNetwork
 
+This Java program accepts an input configuration file and returns a text file with the virtual network graph generated.
+The output file contains the following space-separated values:
+
+	```
+	Source-Node-ID Destination Node-ID Link0-bandwidth Link0-delay
+	Source-Node-ID Destination Node-ID Link1-bandwidth Link1-delay
+	...
+	Node0-CPU Node1-CPU ... NodeN-CPU
+	Node0-queue Node1-queue ... NodeN-queue
+	```
+	
+where  the last two lines are not link definitions, but a space-separated list of node CPU and queues, respectively.
+
 This project is written in Java and requires `JRE 1.8`. 
 
+The `tester` includes a script that generates with mininet a virtual network according to the output file, that
+is, the network should have as many virtual hosts as you specified in your configuration file, with the same network connectivity
+and the same bandwidth, delay and queue.
 
 **How to run:**
 - The project was developed in `Eclipse`, if you use the same IDE, open `Eclipse` and import the project. However it is possible to run this project from command line, as usual Java project.
