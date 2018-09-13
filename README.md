@@ -6,7 +6,7 @@ The input file contains the following lines:
 
 	nodes: size of the virtual network graph
 	topology: linear, full, star, or random (i.e., randomly connected graph)
-	\&#945;: the bias of the random coin (ignored if the topology is not random)
+	α: the bias of the random coin (ignored if the topology is not random)
 	min virtual node CPU: the min virtual CPU capacity allocated to a virtual node (VM)
 	max virtual node CPU: max virtual CPU capacity allocated to a virtual node (VM)
 	min virtual node queue: min buffer capacity available at virtual node (VM)
